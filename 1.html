@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="1.css">
+
+</head>
+
+
+<body id="body">
+  <div class="viewport" id="viewport">
+
+  <div class="blackboxw"></div>
+  <div class="blackboxh"></div>
+  <div class="blackboxl"></div>
+  <div class="blackboxr"></div>
+
+  <div class="box">
+
+    <div class="box1">
+
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <div>
+
+        <span style="--n:1"></span>
+        <span style="--n:2"></span>
+        <span style="--n:3"></span>
+
+      </div>
+    </div>
+    <!-- Ball placed inside the cube -->
+    <div class="trackball-wrapper">
+      <div class="track">
+        <img class="trackab" src="track1.png" slt="">
+
+
+s
+
+
+      </div>
+<img src="home.png" alt="" class="home tudbe">
+
+      <img onclick="projectmove()" src="project.png" alt="" class="project tube">
+
+      <img onclick="contactmove()" src="contact.png" alt="dsf" class="contact tube">
+
+      <img onclick="aboutmove()" src="about.png" alt="" class="about tube">
+      <div id="afterslide" class="afterslide">
+
+        <img id="base" class="base" src="img/curved.png" alt="">
+        <div id="ball" class="ball">
+          <div class="image-layer"></div>
+          <div class="gradient-overlay"></div>
+          <div class="light"><span></span></div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+  </div>
+  </div>
+
+</body>
+<script src="1.js"></script>
+<script>
+  // Get a reference to the element you want to scroll to
+    
+  function projectmove() {
+    document.getElementById("afterslide").style.left = "50vh";
+    document.getElementById("afterslide").style.top = "21vh";
+        
+    document.getElementById("ball").style.transform="rotateX(30deg) rotateY(-40deg) translateZ(20vh) translateX(-153vh) translateY(434vh)";
+    document.getElementById("ball").style.animation="ballfalltube 2s 2s linear forwards ";
+  }
+  function contactmove() {
+    document.getElementById("afterslide").style.left = "-70.7vh";
+    document.getElementById("afterslide").style.top = "-26vh";
+        document.getElementById("ball").style.transform="rotateX(30deg) rotateY(-40deg) translateZ(20vh) translateX(-153vh) translateY(434vh)";
+        document.getElementById("ball").style.animation="ballfalltube 2s 2s linear forwards ";
+  }
+      
+  function aboutmove() {
+    document.getElementById("afterslide").style.left = "-132vh";
+    document.getElementById("afterslide").style.top = "-48vh";
+        document.getElementById("ball").style.transform="rotateX(30deg) rotateY(-40deg) translateZ(20vh) translateX(-153vh) translateY(434vh)";
+     document.getElementById("ball").style.animation="ballfalltube 2s 2s linear forwards ";
+  }
+</script>
+
+</html>
+
+
